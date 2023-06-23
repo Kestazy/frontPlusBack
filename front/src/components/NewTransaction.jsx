@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import transactionsService from '../services/transactionsServices'
 
-const NewTransaction = () => {
+const NewTransaction = ({getData}) => {
     const [text, setText] = useState('');
     const [amount, setAmount] = useState('');
 
@@ -18,6 +18,7 @@ const NewTransaction = () => {
 
         setText('');
         setAmount('');
+        getData();
     }
 
     return (
