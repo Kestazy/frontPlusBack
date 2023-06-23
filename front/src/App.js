@@ -1,10 +1,13 @@
 import React from "react";
+import Transactions from "./components/Transactions";
+import NewTransaction from "./components/NewTransaction";
 
 
 function App() {
   return (
     <div>
-      Veikia
+      <NewTransaction />
+      <Transactions />
     </div>
   );
 }
